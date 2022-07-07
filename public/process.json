@@ -1,0 +1,22 @@
+{
+    "apps": [
+        {
+            "name": "Server 0",
+            "script": "node app/server.js",
+            "env": {
+                "NODE_ENV": "production",
+                "PORT": 4000,
+                "SERVER": "server0"
+            }
+        },
+        {
+            "name": "Server 1",
+            "script": "node app/server.js",
+            "env": {
+                "NODE_ENV": "production",
+                "PORT": 4001,
+                "SERVER": "server1"
+            }
+        }
+    ]
+}

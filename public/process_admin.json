@@ -1,0 +1,14 @@
+{
+    "apps": [
+        {
+            "name": "Admin",
+            "script": "node src/index.js",
+            "env": {
+                "NODE_ENV": "production",
+                "PORT": 3000,
+                "SERVER": "Admin",
+                "URL_PROCESS": "http://localhost:3000/process.json"
+            }
+        }
+    ]
+}
