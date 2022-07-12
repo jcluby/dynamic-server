@@ -10,12 +10,24 @@
             }
         },
         {
-            "name": "Server 1",
-            "script": "node app/server.js",
+            "name": "Work 1",
+            "script": "node app/work.js",
             "env": {
                 "NODE_ENV": "production",
-                "PORT": 4001,
-                "SERVER": "server1"
+                "WORK": "work1",
+                "TIME_TO_CONNECTION": 10000,
+                "POLL_INTERVAL": 1000
+            }
+        },
+        {
+            "name": "Work 2",
+            "script": "node app/work.js",
+            "env": {
+                "NODE_ENV": "production",
+                "WORK": "work2",
+                "TIME_TO_CONNECTION": 10000,
+                "POLL_INTERVAL": 1000,
+                "MAX_ATTEMPTS": 5
             }
         }
     ]
